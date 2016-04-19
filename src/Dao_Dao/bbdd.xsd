@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tienda" type="tiendaType"/>
+  <xs:complexType name="facturaType">
+    <xs:sequence>
+      <xs:element name="dni_cliente">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="48089748z"/>
+            <xs:enumeration value="61241232d"/>
+            <xs:enumeration value="5313212e"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="id_producto">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="precio_articulo">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3€"/>
+            <xs:enumeration value="10€"/>
+            <xs:enumeration value="1€"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="precio_total">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="30€"/>
+            <xs:enumeration value="300€"/>
+            <xs:enumeration value="111€"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="iva">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="21%"/>
+            <xs:enumeration value="10%"/>
+            <xs:enumeration value="11%"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="inventarioType">
+    <xs:sequence>
+      <xs:element type="productoType" name="producto" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clientesType">
+    <xs:sequence>
+      <xs:element type="clienteType" name="cliente" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="empleadosType">
+    <xs:sequence>
+      <xs:element type="empleadoType" name="empleado" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tiendaType">
+    <xs:sequence>
+      <xs:element type="clientesType" name="clientes"/>
+      <xs:element type="empleadosType" name="empleados"/>
+      <xs:element type="facturasType" name="facturas"/>
+      <xs:element type="inventarioType" name="inventario"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productoType">
+    <xs:sequence>
+      <xs:element name="id">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="3"/>
+            <xs:enumeration value="4"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Adaptador VGA"/>
+            <xs:enumeration value="Goma"/>
+            <xs:enumeration value="PC i5"/>
+            <xs:enumeration value="PC i7"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="precio">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="10€"/>
+            <xs:enumeration value="1€"/>
+            <xs:enumeration value="900€"/>
+            <xs:enumeration value="1100€"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="stock">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1.000"/>
+            <xs:enumeration value="500.000"/>
+            <xs:enumeration value="5.000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="empleadoType">
+    <xs:sequence>
+      <xs:element name="id">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="46465442z"/>
+            <xs:enumeration value="142113d"/>
+            <xs:enumeration value="3414541m"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Sergi"/>
+            <xs:enumeration value="Marc"/>
+            <xs:enumeration value="Moises"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="apellido">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Barjola"/>
+            <xs:enumeration value="Cano"/>
+            <xs:enumeration value="Villaverde"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="sueldo">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="999999999€"/>
+            <xs:enumeration value="8.600€"/>
+            <xs:enumeration value="7.777€"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="antiguedad">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="15"/>
+            <xs:enumeration value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="facturasType">
+    <xs:sequence>
+      <xs:element type="facturaType" name="factura" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clienteType">
+    <xs:sequence>
+      <xs:element name="dni">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="46465442z"/>
+            <xs:enumeration value="13413514e"/>
+            <xs:enumeration value="61241232d"/>
+            <xs:enumeration value="5313212e"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Sergi"/>
+            <xs:enumeration value="Uriol"/>
+            <xs:enumeration value="Pau"/>
+            <xs:enumeration value="Mireia"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="apellido">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Barjola"/>
+            <xs:enumeration value="Cunado"/>
+            <xs:enumeration value="Iglesias"/>
+            <xs:enumeration value="Fernandez"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

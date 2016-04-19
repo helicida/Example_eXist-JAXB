@@ -1,0 +1,31 @@
+2016/04/19 16:44:47	Abriendo conexión.. 
+2016/04/19 16:48:29	Abriendo conexión.. 
+2016/04/19 16:52:00	Abriendo conexión.. 
+2016/04/19 16:52:28	Abriendo conexión.. 
+2016/04/19 16:54:46	Abriendo conexión.. 
+2016/04/19 16:57:52	Abriendo conexión.. 
+2016/04/19 16:58:31	Abriendo conexión.. 
+2016/04/19 16:59:23	Abriendo conexión.. 
+2016/04/19 17:01:22	Abriendo conexión.. 
+2016/04/19 17:02:15	Abriendo conexión.. 
+2016/04/19 17:03:32	Abriendo conexión.. 
+2016/04/19 17:11:25	Abriendo conexión.. 
+2016/04/19 17:11:32	Abriendo conexión.. 
+2016/04/19 17:11:56	Abriendo conexión.. 
+2016/04/19 17:12:16	Abriendo conexión.. 
+2016/04/19 17:13:25	Abriendo conexión.. 
+2016/04/19 17:14:15	Abriendo conexión.. 
+2016/04/19 17:14:49	Abriendo conexión.. 
+2016/04/19 17:15:53	Abriendo conexión.. 
+2016/04/19 17:16:05	Abriendo conexión.. 
+2016/04/19 17:17:05	Abriendo conexión.. 
+2016/04/19 17:17:42	Abriendo conexión.. 
+2016/04/19 17:24:19	Abriendo conexión.. 
+2016/04/19 17:24:19	Obteniendo colección del servidor: host=172.31.101.225 user=admin pass=dionis
+2016/04/19 17:24:19	Colección creada: dionisGuay
+2016/04/19 17:24:19	Cerrando conexión.. 
+2016/04/19 17:24:52	Abriendo conexión.. 
+2016/04/19 17:25:01	Obteniendo colección del servidor: host=172.31.101.225 user=admin pass=dionis
+2016/04/19 17:25:01	Colección creada: coleccionAModificar
+2016/04/19 17:25:01	Recurso no encontrado: /home/46465442z/IdeaProjects/Example_XML_API/src/Dao_Dao/bbdd.xml en Coleccion: coleccionAModificar
+2016/04/19 17:25:01	Recurso agregado: /home/46465442z/IdeaProjects/Example_XML_API/src/Dao_Dao/bbdd.xml en Colección: coleccionAModificar
